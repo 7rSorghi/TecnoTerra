@@ -1,0 +1,22 @@
+body
+{
+    background-image: url("imagens/Wallpaper Quiz.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.text-neon-blue {
+    color: #38b6ff;
+    text-shadow: 0 0 5px #0095ff, 0 0 10px #0d00ff, 0 0 20px #0400ff;
+  }
+  
+  .pe-menuopções
+  {
+    padding-right: 11.5%;
+  }
+
+  .text-neon-white {
+    color: white;
+    text-shadow: 0 0 5px #8a8a8a, 0 0 10px #3f3f3f, 0 0 20px #000000;
+  }
