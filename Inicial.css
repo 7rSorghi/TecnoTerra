@@ -1,0 +1,167 @@
+/* Inicial.css — layout responsivo igual às screenshots, com cards-botão */
+
+/* reset / box-sizing */
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; padding: 0; overflow-x: hidden; }
+
+/* body e background */
+body {
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  padding-top: 70px; /* compensa navbar fixed-top (menu mantido) */
+  background-image: url("imagens/Wallapaper inicio.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 5%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* HERO (título gigante) */
+.hero-wrapper {
+  background: linear-gradient(180deg, rgba(0,0,0,0.78), rgba(0,0,0,0.38));
+  padding: 1rem 0 .6rem 0;
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
+}
+
+.hero-title {
+  margin: 0;
+  color: #fff;
+  text-shadow: 0 6px 12px rgba(0,0,0,0.7), 0 0 24px rgba(255,255,255,0.85);
+  font-size: clamp(3.4rem, 12vw, 11.5rem);
+  line-height: 0.9;
+  padding-left: .6rem;
+  text-align: left;
+}
+
+@media (max-width: 991.98px) {
+  .hero-title { text-align: center; padding-left: 0; }
+}
+
+.main-area { margin-top: 1.6rem; margin-bottom: 2.6rem; }
+
+/* CARD-LINK (comportamento comum a todos os "botões") */
+.card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-visual {
+  background: rgba(0,0,0,0.62);
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.03);
+  transition: transform .16s ease, box-shadow .16s ease;
+}
+
+/* hover desktop */
+@media (hover: hover) and (pointer: fine) {
+  .card-visual:hover { transform: translateY(-6px); box-shadow: 0 14px 38px rgba(0,0,0,0.5); }
+}
+
+/* SIDEBAR (globo + quiz) */
+.icon-card {
+  padding: 1.25rem;
+  min-height: 260px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-globe {
+  width: 160px;
+  height: auto;
+  display: block;
+  margin-bottom: .6rem;
+  filter: drop-shadow(0 6px 18px rgba(0,0,0,0.6));
+}
+
+.icon-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.small-card {
+  padding: .5rem;
+  border-radius: 12px;
+  overflow: hidden;
+  display:block;
+}
+
+/* BIG CARD (imagem grande) */
+.big-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 26px;
+  border: 1px solid rgba(255,255,255,0.03);
+  background: #000;
+  min-height: 260px;
+}
+
+.big-image {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  display: block;
+}
+
+.big-overlay {
+  position: absolute;
+  left: 6%;
+  bottom: 14%;
+  z-index: 2;
+}
+
+.big-label {
+  margin: 0;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 6px 18px rgba(0,0,0,0.6);
+}
+
+/* CONTACT CARD (imagem com texto já incluso) */
+.contact-card {
+  margin-top: 1.6rem;
+  background: linear-gradient(135deg, rgba(0,0,0,0.6), rgba(16,16,16,0.75));
+  border-radius: 18px;
+  padding: .6rem;
+  display:flex;
+  align-items:center;
+  gap: 1rem;
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+.contact-card img {
+  height: auto;
+  width: 100%;
+  max-width: 340px;
+  display:block;
+  border-radius: 10px;
+}
+
+@media (max-width: 991.98px) {
+  .big-image { height: 300px; }
+  .icon-globe { width: 140px; }
+  .big-label { font-size: 2rem; }
+  .contact-card img { max-width: 260px; }
+}
+
+@media (max-width: 575.98px) {
+  .hero-title { font-size: clamp(2.2rem, 16vw, 6.6rem); text-align: center; padding-left: 0; }
+  .big-image { height: 220px; border-radius: 12px; }
+  .icon-globe { width: 110px; }
+  .big-overlay { left: 5%; bottom: 10%; }
+  .big-label { font-size: 1.5rem; }
+  .contact-card { flex-direction: column; align-items: flex-start; gap: .6rem; }
+  .contact-card img { max-width: 210px; width: 100%; }
+  .sidebar { order: 1; margin-bottom: 1rem; }
+  .col-lg-9 { order: 2; }
+}
+
+/* evita overflow horizontal */
+html, body { overflow-x: hidden; }

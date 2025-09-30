@@ -1,0 +1,53 @@
+.main {
+    background-image: url("imagens/Wallpaper Quiz.jpg");
+    background-size: cover;      
+    background-position: center;  
+    min-height: 100vh;
+    padding: 50px 0;              
+}
+
+.text-neon-blue {
+    color: #38b6ff;
+    text-shadow: 0 0 5px #0095ff, 0 0 10px #0d00ff, 0 0 20px #0400ff;
+}
+
+h2, h3 {
+    color: #2c3e50;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Container dos textos e vídeos */
+.content-box {
+    background-color: #e6f0f2;  
+    border: 2px solid #001f3f;  
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Link estudantes */
+.estudantes-link {
+    color: #38b6ff;           
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.estudantes-link:hover {
+    color: #001f3f;            
+    border-bottom: 2px solid #001f3f;  
+    text-shadow: 0 0 8px #38b6ff; /* efeito neon */
+    cursor: pointer;
+}
+
+/* Vídeos */
+.ratio iframe {
+    border-radius: 8px;
+    border: 1px solid #001f3f;
+    width: 100%; 
+    height: auto; 
+}
+
