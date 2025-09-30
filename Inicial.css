@@ -9,7 +9,7 @@ body {
   font-family: "Playfair Display", serif;
   color: #fff;
   padding-top: 70px; /* compensa navbar fixed-top (menu mantido) */
-  background-image: url("imagens/Wallapaper inicio.png");
+  background-image: url("imagens/Wallpaper Quiz.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 5%;
@@ -165,3 +165,4 @@ body {
 
 /* evita overflow horizontal */
 html, body { overflow-x: hidden; }
+
