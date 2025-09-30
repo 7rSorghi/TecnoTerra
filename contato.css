@@ -1,0 +1,17 @@
+
+.text-neon-blue {
+  color: #38b6ff;
+  text-shadow: 0 0 5px #0095ff, 0 0 10px #0d00ff, 0 0 20px #0400ff;
+}
+
+.pe-menuopções
+{
+  padding-right: 11.5%;
+}
+.fontemoderna {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+}
+

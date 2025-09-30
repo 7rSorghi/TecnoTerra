@@ -1,0 +1,40 @@
+body 
+{
+    margin: 0;
+}
+
+.blur
+{
+  backdrop-filter: blur(10px);
+}
+
+.text-neon-blue {
+  color: #38b6ff;
+  text-shadow: 0 0 5px #0095ff, 0 0 10px #0d00ff, 0 0 20px #0400ff;
+}
+
+.pe-menuopções
+{
+  padding-right: 11.5%;
+}
+
+/*deixa o formato do texto justificado que nem do word*/
+.text-justify
+{
+  text-align: justify;
+}
+
+/*Essas duas variáveis fazem que o id leve um pouco assima do lugar selecionado, para que o menu não cubra*/
+:root {
+  --navbar-height: 90px;
+}
+
+/* Aplica a margem de rolagem a todos os elementos que possuem id*/
+[id] {
+  scroll-margin-top: var(--navbar-height);
+}
+
+.text-neon-white {
+    color: white;
+    text-shadow: 0 0 5px #8a8a8a, 0 0 10px #3f3f3f, 0 0 20px #000000;
+  }
