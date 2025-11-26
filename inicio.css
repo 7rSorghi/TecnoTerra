@@ -180,7 +180,6 @@ html, body {
   border-radius: 10px;
 }
   
-/* Estrutura geral */
 .secao-parallax {
   display: flex;
   width: 100%;
@@ -243,8 +242,6 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /* imagem de fundo igual à do print */
   background-image: url("imagens/Pesquisa.png");
   background-size: cover;
   background-position: center;
@@ -254,4 +251,55 @@ html, body {
 .sobre-nos-card1
 {
     background-color: rgb(180, 255, 255);
+}
+
+.secao-parallax1 {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Lado esquerdo: imagem com parallax */
+.imagem-parallax1 {
+  flex: 1;
+  background-image: url("imagens/Quiz.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+}
+
+/* Lado direito: caixa de texto */
+.texto-box1 {
+  flex: 0.3;
+  padding: 80px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.texto-box1 .titulo {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 40px;
+}
+
+.descricao1 {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  max-width: 550px;
+  color: #333;
+}
+
+.botao1 {
+  margin-top: 40px;
+  padding: 12px 28px;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  transition: 0.3s;
 }
