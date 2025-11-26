@@ -1,0 +1,25 @@
+html, body
+{
+    background-image: url("imagens/Fundo inicio.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.caixatitulo
+{
+    font-size: clamp(5rem, 11vw, 12rem);
+    text-shadow: 8px 8px 18px rgba(0, 0, 0, 0.6);
+    color: rgb(255, 255, 255);
+}
+
+.caixasubtitulo
+{
+    text-shadow: 10px 10px 24px rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+.caixatexto {
+    background-size: cover;
+    background-image: url("images/Fundo saúde.png");
+}
