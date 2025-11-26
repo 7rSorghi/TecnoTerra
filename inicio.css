@@ -1,25 +1,148 @@
-html, body
-{
-    background-image: url("imagens/Fundo inicio.png");
-    background-size: cover;
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url("images/Noticias wallpaper.jpg");
     background-repeat: no-repeat;
-    
-}
-
-.caixatitulo
-{
-    font-size: clamp(5rem, 11vw, 12rem);
-    text-shadow: 8px 8px 18px rgba(0, 0, 0, 0.6);
-    color: rgb(255, 255, 255);
-}
-
-.caixasubtitulo
-{
-    text-shadow: 10px 10px 24px rgba(0, 0, 0, 0.6);
+    background-position: center; 
+    background-size: cover;     
+    background-color: rgb(255, 255, 255);     
+  }
+  
+  .navbar {
+      transition: opacity 0.4s ease; /* Transparência suave */
+  }
+  
+  .navbar.off {
+      opacity: 0; /* Quanto menor, mais transparente */
+  }
+  
+  .blur
+  {
+      backdrop-filter: blur(10px);
+  }
+  
+  .caixatitulo
+  {
+      font-size: clamp(5rem, 11vw, 12rem);
+      text-shadow: 8px 8px 18px rgba(0, 0, 0, 0.6);
+      color: blue;
+  }
+  
+  .caixasubtitulo
+  {
+      text-shadow: 10px 10px 24px rgba(0, 0, 0, 0.6);
+      color: white;
+  }
+  
+  .primeiroBot
+  {
+      color: black;
+  }
+  
+  .caixatexto {
+      background-size: cover;
+      background-image: url("images/Fundo saúde.png");
+  }
+  
+  /* Remove a imagem só no celular */
+  @media (max-width: 768px) {
+      .caixatexto {
+          background-image: none !important;
+        color: black;
+  
+        
+      }
+  }
+  
+  .titulo
+  {
+      font-size: 325%;
+      padding-top: 5%;
+  }
+  
+  .texto {
+      padding-inline: 30%;
+  }
+  
+  @media (max-width: 768px) {
+      .texto {
+          padding-inline: 5%;
+          font-size: 1.2rem; /* opcional: melhora leitura */
+  
+        .texto-sombreado {
+      color: black;
+      text-shadow: 
+          2px 2px 4px rgba(0,0,0,0.5);  /* deixa mais forte */
+  }
+      }
+  }
+  
+  .caixadenoticias {
+      background-color: rgb(0, 255, 242);
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+  }
+  
+  .card {
+    max-width: 100%; /* largura máxima da caixa */
+    margin: 0 auto;    /* centraliza horizontalmente */
+  }
+  
+  .card-img-top {
+    max-height: 150px; /* limita a altura da imagem */
+    object-fit: cover; /* mantém proporção e corta o excesso */
+  }
+  
+  /*Quando passsar o mouse, fica preto o card*/
+  .card-hover-black:hover {
+    background-color: rgb(0, 191, 255);
+    cursor: pointer; /* Muda o cursor para indicar clique */
     color: white;
-}
-
-.caixatexto {
-    background-size: cover;
-    background-image: url("images/Fundo saúde.png");
-}
+  }
+  
+  .texto-sombreado {
+      color: rgb(0, 0, 0);
+      text-shadow: 
+          2px 2px 4px rgba(0,0,0,0.5);  /* deixa mais forte */
+  }
+  
+  .text-neon 
+  {
+      color: rgb(255, 255, 255);
+      text-shadow: 
+          2px 2px 4px rgba(0,0,0,0.5);
+          font-weight: 700;
+  }
+  
+  .text-neon:hover
+  {
+    color: rgb(0, 191, 255);
+  }
+  
+  .nav-item
+  {
+      text-shadow: 
+          2px 2px 4px rgba(0,0,0,0.5);
+  }
+  
+  .nav-item:hover .nav-link {
+      color: rgb(0, 191, 255) !important;
+  }
+  
+  .nav-link.active 
+  {
+      text-decoration: underline;
+  
+  }
+  
+  .card-hover-black {
+      transition: transform .25s ease-in-out; /* animação suave */
+  }
+  
+  
+  
+  
+  
+  
+  
