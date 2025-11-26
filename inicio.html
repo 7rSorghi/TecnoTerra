@@ -1,25 +1,94 @@
+<!--Integrantes do grupo: João Pedro, João Victor, Miguel Ribeiro, Davi Andrade, Raphael dos Santos, Pietra e Victor-->
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tecno Terra</title>
+    <title>Jornal IF</title>
 
     <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!--CSS-->
-    <link rel="stylesheet" href="inicio.css">
+  <!-- favicon -->
+  <link rel="icon" href="images/Logo If.png" type="image/x-icon">
+
+  <!-- CSS Inicial -->
+  <link rel="stylesheet" href="inicio.css">
 
 </head>
 <body>
 
-    <div class="d-flex justify-content-center align-items-center vh-100">
+    <!--Menu-->
+  <nav class="navbar navbar-verde py-2 navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      
+      <!--Logo-->
+      <a class="navbar-brand fw-bold fs-2 text-neon" href="https://jpgamer0007.github.io/Jornal-IF/">
+        <img src="images/Logo If.png" alt="Logo" height="50" class="d-inline-block align-text-top">
+        Jornal IF
+      </a>
+
+      <!--Botão hamburguer (mobile)-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!--Opções do Menu-->
+      <div class="collapse navbar-collapse justify-content-end pe-5 pe-menuopções" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active fs-5 fw-bold px-3 text-light" href="inicio.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-5 fw-bold px-3 text-light" href="#Noticias">Notícias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-5 fw-bold px-3 text-light" href="contato.html">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="d-flex justify-content-center align-items-center vh-100">
   <div class="d-flex flex-column justify-content-center align-items-center ps-5">
     <h1 class="caixatitulo m-0">Tecno Terra</h1>
-    <h2 class="m-0 caixasubtitulo">A tecnologia que entende a Terra.</h2>
+    <h2 class="m-0 caixasubtitulo ">Inovação que enfrenta a força da natureza.</h2>
+    <a href="#introdução" class="btn btn-light btn-lg mt-5 me-5 text-dark">Saiba Mais →</a>
   </div>
 </div>
 
+
+  <div class="caixatexto d-flex flex-column align-items-center" id="introdução">
+    <h1 class="titulo pb-5 fs-0 fw-bold">Tecno Terra</h1>
+    <p class="texto text-center fs-3 m-0 texto-sombreado">Bem-vindo ao Tecno Terra!
+      <br><br>O Tecno Terra é um projeto desenvolvido por estudantes do IFSP – Campus Cubatão (CBT), como parte do curso técnico em Informática integrado ao ensino médio. Nosso objetivo é investigar e apresentar a relação entre a tecnologia e os desastres naturais, analisando como ferramentas digitais, sistemas de monitoramento e avanços científicos auxiliam na previsão, acompanhamento e mitigação de fenômenos ambientais extremos.
+      <br>
+      Comprometemo-nos a fornecer ao público informações claras, acessíveis e embasadas sobre como a inovação tecnológica tem transformado a forma como a sociedade enfrenta desafios naturais. Por meio de conteúdos educativos e análises fundamentadas, o Tecno Terra busca promover conhecimento e reflexão sobre o presente e o futuro da interação entre tecnologia, meio ambiente e segurança humana.</p>
+      <a href="contato.html" class="btn btn-outline-light btn-lg blur mt-5 mb-5"> Sobre nós --&gt;</a>
+  </div>
+
+  <div class="caixatexto d-flex flex-column align-items-center" id="introdução">
+    <h1 class="titulo pb-5 fs-0 fw-bold">Notícias</h1>
+    <p class="texto text-center fs-3 m-0 texto-sombreado">Bem-vindo ao Tecno Terra!
+      <br><br>
+      
+    </p>
+      <a href="contato.html" class="btn btn-outline-light btn-lg blur mt-5 mb-5"> Entre em contato --&gt;</a>
+  </div>
+  
+  <footer class="bg-dark text-white text-center py-2">
+  © 2025 - Jornal IF - Todos os direitos reservados.
+  </footer>
+
+     <!-- JavaScript do menu -->
+    <script src="inicio.js"></script>
 </body>
+
 </html>
+
+
+
