@@ -2,7 +2,7 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-image: url("images/Noticias wallpaper.jpg");
+    background-image: url("imagens/Fundo inicio.png");
     background-repeat: no-repeat;
     background-position: center; 
     background-size: cover;     
@@ -26,13 +26,13 @@ html, body {
   {
       font-size: clamp(5rem, 11vw, 12rem);
       text-shadow: 8px 8px 18px rgba(0, 0, 0, 0.6);
-      color: blue;
+      color: gold;
   }
   
   .caixasubtitulo
   {
       text-shadow: 10px 10px 24px rgba(0, 0, 0, 0.6);
-      color: white;
+      color: gold;
   }
   
   .primeiroBot
