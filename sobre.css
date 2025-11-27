@@ -1,3 +1,8 @@
+.pe-menuopções {
+    padding-right: 11.5%;
+}
+
+
 .main {
     background-image: url("imagens/Wallpaper Quiz.jpg");
     background-size: cover;      
@@ -107,5 +112,6 @@ p {
         font-size: 1.1rem;
     }
 }
+
 
 
