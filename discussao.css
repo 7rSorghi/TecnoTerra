@@ -1,0 +1,98 @@
+:root {
+  --paper-width: 980px;
+  --accent: #0d6efd;
+  --text: #222;
+  --muted: #55606a;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: var(--text);
+  background-color: #f3f5f7;
+}
+
+body, html {
+  background-image: url('imagens/Wallpaper Quiz.jpg');
+  background-repeat: repeat;
+  background-size: auto;
+  background-attachment: scroll;
+  margin: 0;
+  padding-top: 40px;
+}
+
+/* Hero / header */
+.hero {
+  padding-top: 56px;
+  padding-bottom: 28px;
+  background: transparent;
+}
+
+/* Caixa branca principal */
+.paper {
+  background: rgba(255,255,255,0.98);
+  max-width: var(--paper-width);
+  margin: -40px auto 40px auto;
+  padding: 34px;
+  border-radius: 12px;
+  box-shadow: 0 12px 28px rgba(16,24,40,0.08);
+  border: 1px solid rgba(16,24,40,0.04);
+}
+
+/* Lista de discussão com espaçamento */
+.discussion-list {
+  padding-left: 1.1rem;
+  margin: 0;
+}
+.discussion-list > li {
+  margin-bottom: 1.15rem;
+}
+
+/* Destaque em perguntas (títulos) */
+.discussion-list strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: #111827;
+}
+
+/* Imagens internas */
+.content img,
+.paper img,
+.paper .img-fluid {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Citações ou blocos de destaque */
+.quote {
+  border-left: 4px solid var(--accent);
+  background: rgba(13,110,253,0.04);
+  padding: 12px 14px;
+  border-radius: 6px;
+  color: var(--muted);
+  margin: 12px 0;
+}
+
+/* Rodapé */
+.page-footer {
+  color: var(--muted);
+  font-size: 0.95rem;
+  background: transparent;
+}
+
+/* Responsividade */
+@media (max-width: 576px) {
+  .paper {
+    margin: -20px 14px 24px 14px;
+    padding: 18px;
+    border-radius: 10px;
+  }
+  .hero {
+    padding-top: 36px;
+    padding-bottom: 18px;
+  }
+}
