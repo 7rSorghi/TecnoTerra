@@ -103,3 +103,6 @@ a
   
 }
 
+.card-hover-black {
+      transition: transform .25s ease-in-out; /* animação suave */
+  }

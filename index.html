@@ -1,35 +1,33 @@
+<!--Integrantes do grupo: João Pedro, João Victor, Felipe Sorgui e Eduardo Cardoso-->
+
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Inicio - Tecno Terra</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jornal IF</title>
 
-  <!-- Bootstrap -->
+    <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Fonte -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-
-  <!-- Inicial CSS -->
-  <link rel="stylesheet" href="Inicial.css">
-
-  <!--Geral CSS-->
-  <link rel="stylesheet" href="geral.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- favicon -->
   <link rel="icon" href="imagens/Tecno terra.png" type="image/x-icon">
+
+  <!-- CSS Inicial -->
+  <link rel="stylesheet" href="inicio.css">
+
 </head>
 <body>
 
-  <!--Menu-->
-  <nav class="navbar navbar-dark bg-black py-2 navbar-expand-lg fixed-top">
+    <!--Menu-->
+  <nav class="navbar navbar-verde py-2 navbar-expand-lg fixed-top">
     <div class="container-fluid">
       
       <!--Logo-->
-      <a class="navbar-brand text-neon-blue fw-bold fs-2" href="quiz.html">
-        <img src="imagens/Tecno terra.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
-        TecnoTerra
+      <a class="navbar-brand fw-bold fs-2 text-neon" href="https://jpgamer0007.github.io/GeoCentro/">
+        <img src="imagens/Logo if.png" alt="Logo" height="50" class="d-inline-block align-text-top">
+        GeoCentro
       </a>
 
       <!--Botão hamburguer (mobile)-->
@@ -39,88 +37,104 @@
       </button>
 
       <!--Opções do Menu-->
-      <div class="collapse navbar-collapse justify-content-center pe-menuopções" id="navbarNav">
+      <div class="collapse navbar-collapse justify-content-end pe-5 pe-menuopções" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active fs-5 pe-4 ps-4 p-3" href="index.html">Início</a>
+            <a class="nav-link active fs-5 fw-bold px-3 text-light blur2" href="index.html">Início</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-5 pe-4 ps-4 p-3" href="quiz.html">Quiz</a>
+            <a class="nav-link fs-5 fw-bold px-3 text-light blur2" href="#Noticias">Notícias</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-5 ps-4 pe-4 p-3" href="Noticias.html">Notícias</a>
+            <a class="nav-link fs-5 fw-bold px-3 text-light blur2" href="contato.html">Quiz</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-5 ps-4 pe-4 p-3" href="sobre.html">Sobre</a>
+            <a class="nav-link fs-5 fw-bold px-3 text-light blur2" href="contato.html">Discussão</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-5 ps-4 p-3" href="TecnoContato.html">Contato</a>
+            <a class="nav-link fs-5 fw-bold px-3 text-light blur2" href="contato.html">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-5 fw-bold px-3 text-light blur2" href="contato.html">Contato</a>
           </li>
         </ul>
       </div>
-
-      <!-- PT-BR-->
-      <span class="navbar-brand mb-0 h1 fs-5">PT-BR</span>
-      
     </div>
   </nav>
 
-  <!-- HERO -->
-  <header class="hero-wrapper">
-    <div class="container">
-      <h1 class="hero-title">TECNO TERRA</h1>
-    </div>
-  </header>
+  <div class="d-flex justify-content-start mx-4 align-items-center vh-100">
+  <div class="d-flex flex-column justify-content-center align-items-start ps-5">
+    <h1 class="caixatitulo m-0 blur">Tecno Terra</h1>
+    <h2 class="m-0 caixasubtitulo blur">&nbsp;Inovação que enfrenta a força da natureza.</h2>
+  </div>
+</div>
 
-  <!-- MAIN AREA -->
-  <main class="container main-area">
-    <div class="row gx-4 align-items-start">
 
-      <!-- SIDEBAR (globo e quiz) -->
-      <aside class="col-12 col-lg-3 sidebar">
-        <!-- SOBRE (botão-card) -->
-        <a class="card-link" href="sobre.html" title="Sobre">
-          <div class="card-visual icon-card">
-            <img src="imagens/Tecno terra.png" alt="globo" class="icon-globe" />
-            <div class="icon-title">SOBRE</div>
-          </div>
-        </a>
+  <section class="sobre-nos-bloco">
+  <div class="sobre-nos-card">
+    <h1 class="fw-bold">Tecno Terra</h1>
 
-        <!-- QUIZ (botão-card) -->
-        <a class="card-link mt-4" href="quiz.html" title="Quiz">
-          <div class="card-visual small-card">
-            <img src="imagens/Quiz.webp" alt="Quiz" class="img-fluid rounded" />
-          </div>
-        </a>
-      </aside>
+    <p>
+      Bem-vindo ao Tecno Terra! <br><br>
+      O Tecno Terra é um projeto desenvolvido por estudantes do IFSP – Campus Cubatão (CBT), como parte do curso técnico em Informática integrado ao ensino médio. Nosso objetivo é investigar e apresentar a relação entre a tecnologia e os desastres naturais, analisando como ferramentas digitais, sistemas de monitoramento e avanços científicos auxiliam na previsão, acompanhamento e mitigação de fenômenos ambientais extremos.
+      <br><br>
+      Comprometemo-nos a fornecer ao público informações claras, acessíveis e embasadas sobre como a inovação tecnológica tem transformado a forma como a sociedade enfrenta desafios naturais. Por meio de conteúdos educativos e análises fundamentadas, o Tecno Terra busca promover conhecimento e reflexão sobre o presente e o futuro da interação entre tecnologia, meio ambiente e segurança humana.
+    </p>
 
-      <!-- COLUNA PRINCIPAL (imagem grande: NOTÍCIAS) -->
-      <section class="col-12 col-lg-9">
-        <a class="card-link" href="Noticias.html" title="Notícias">
-          <div class="card-visual big-card">
-            <img src="imagens/Satélite.jpg" alt="Satélite" class="big-image" loading="lazy" />
-            <div class="big-overlay">
-              <h2 class="big-label">NOTÍCIAS</h2>
-            </div>
-          </div>
-        </a>
+    <a href="contato.html" class="btn btn-dark btn-lg mt-4">Sobre nós →</a>
+  </div>
+</section>
 
-        <!-- CONTACT (botão-card, imagem já com texto) -->
-        <a class="card-link" href="TecnoContato.html" title="Contato">
-          <div class="contact-card d-flex justify-content-center">
-            <img src="imagens/Tecno Terra Contato.png" alt="Contato - Tecno Terra" />
-          </div>
-        </a>
-      </section>
+<section class="secao-parallax">
+  <div class="texto-box">
+    <h1 class="titulo">Notícias</h1>
+    <p class="descricao">
+      Confira nossa página de notícias, onde reunimos conteúdos que relacionam tecnologia e desastres naturais.<br>
+      Lá você encontra informações atualizadas, análises relevantes e materiais que ampliam seu conhecimento sobre o tema,
+      mantendo você sempre bem informado.
+    </p>
 
-    </div>
-  </main>
+    <a href="contato.html" class="botao">Notícias →</a>
+  </div>
 
-  <footer class="text-center py-3">
-    <small class="text-muted">Tecno Terra © <span id="year"></span></small>
+  <div class="imagem-parallax"></div>
+</section>
+
+  <section class="sobre-nos-bloco1">
+  <div class="sobre-nos-card sobre-nos-card1">
+    <h1 class="fw-bold">Discussão e Análise do Tema</h1>
+
+    <p>
+      Nesta seção, apresentamos a discussão e análise dos resultados obtidos ao longo da pesquisa, com foco na relação entre a tecnologia e os desastres naturais. Nosso objetivo é interpretar de forma crítica como as ferramentas tecnológicas — como sistemas de monitoramento, modelos de previsão e dispositivos de alerta — contribuem para a compreensão, antecipação e mitigação desses fenômenos. A análise aqui desenvolvida busca esclarecer os impactos positivos dessas inovações, bem como suas limitações, oferecendo uma visão mais completa sobre o papel da tecnologia na redução de riscos e na proteção das comunidades afetadas.
+    </p>
+
+    <a href="contato.html" class="btn btn-dark btn-lg mt-4">Sobre nós →</a>
+  </div>
+</section>
+
+<section class="secao-parallax1">
+  <div class="imagem-parallax1"></div>
+  <div class="texto-box1">
+    <h1 class="titulo">Quiz</h1>
+    <p class="descricao">
+      Pronto para testar seus conhecimentos? <br>
+  Nosso quiz foi feito pra você descobrir, de um jeito rápido e divertido, o quanto sabe sobre tecnologia e desastres naturais. Nada complicado—é só jogar, aprender e ver até onde você consegue chegar.<br>
+  Bora tentar?
+    </p>
+
+    <a href="contato.html" class="botao">Quiz →</a>
+  </div>
+</section>
+  
+  <footer class="bg-dark text-white text-center py-2">
+  © 2025 - Tecno Terra - Todos os direitos reservados.
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+     <!-- JavaScript do menu -->
+    <script src="geral.js"></script>
 </body>
+
 </html>
+
+
 

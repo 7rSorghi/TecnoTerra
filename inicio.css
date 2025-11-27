@@ -19,7 +19,12 @@ html, body {
   
   .blur
   {
-      backdrop-filter: blur(10px);
+      backdrop-filter: blur(5px);
+  }
+
+  .blur2
+  {
+      backdrop-filter: blur(2px);
   }
   
   .caixatitulo
@@ -78,38 +83,9 @@ html, body {
       }
   }
   
-  .caixadenoticias {
-      background-color: rgb(0, 255, 242);
-      padding-top: 3rem;
-      padding-bottom: 3rem;
-  }
-  
-  .card {
-    max-width: 100%; /* largura máxima da caixa */
-    margin: 0 auto;    /* centraliza horizontalmente */
-  }
-  
-  .card-img-top {
-    max-height: 150px; /* limita a altura da imagem */
-    object-fit: cover; /* mantém proporção e corta o excesso */
-  }
-  
-  /*Quando passsar o mouse, fica preto o card*/
-  .card-hover-black:hover {
-    background-color: rgb(0, 191, 255);
-    cursor: pointer; /* Muda o cursor para indicar clique */
-    color: white;
-  }
-  
-  .texto-sombreado {
-      color: rgb(0, 0, 0);
-      text-shadow: 
-          2px 2px 4px rgba(0,0,0,0.5);  /* deixa mais forte */
-  }
-  
   .text-neon 
   {
-      color: rgb(255, 255, 255);
+      color: rgb(0, 255, 0);
       text-shadow: 
           2px 2px 4px rgba(0,0,0,0.5);
           font-weight: 700;
@@ -117,7 +93,7 @@ html, body {
   
   .text-neon:hover
   {
-    color: rgb(0, 191, 255);
+    color: rgb(255, 255, 255);
   }
   
   .nav-item
@@ -135,11 +111,6 @@ html, body {
       text-decoration: underline;
   
   }
-  
-  .card-hover-black {
-      transition: transform .25s ease-in-out; /* animação suave */
-  }
-  
   
 .sobre-nos-bloco {
   position: relative;
@@ -302,4 +273,28 @@ html, body {
   border-radius: 8px;
   font-size: 1.2rem;
   transition: 0.3s;
+}
+
+/* --- REMOVER IMAGEM E MOSTRAR APENAS TEXTO NO CELULAR --- */
+@media (max-width: 768px) {
+
+    /* Esconde as imagens das seções */
+    .imagem-parallax,
+    .imagem-parallax1 {
+        display: none !important;
+    }
+
+    /* Faz o texto ocupar 100% da largura */
+    .texto-box,
+    .texto-box1 {
+        flex: 1 !important;
+        width: 100%;
+        padding: 40px 20px !important;
+    }
+
+    /* Reduz o tamanho do título para melhor leitura */
+    .texto-box .titulo,
+    .texto-box1 .titulo {
+        font-size: 2.5rem !important;
+    }
 }
