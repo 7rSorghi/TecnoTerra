@@ -1,3 +1,16 @@
+.text-neon-blue {
+    color: #38b6ff;
+    text-shadow: 0 0 5px #0095ff, 0 0 10px #0d00ff, 0 0 20px #0400ff;
+}
+
+.text-neon-white {
+    color: white;
+    text-shadow: 0 0 5px #8a8a8a, 0 0 10px #3f3f3f, 0 0 20px #000000;
+}
+
+.pe-menuopções {
+    padding-right: 11.5%;
+}
 /* GALERIA DE PRÉ-VISUALIZAÇÃO */
 #imagePreview {
   display: grid;
@@ -63,19 +76,14 @@ body {
   }
 }
 
-.text-neon-blue {
-  color: #38b6ff;
-  text-shadow: 0 0 5px #0095ff, 0 0 10px #0d00ff, 0 0 20px #0400ff;
-}
-
-.pe-menuopções
-{
-  padding-right: 11.5%;
-}
 .fontemoderna {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: italic;
 }
+
+
+
+
 

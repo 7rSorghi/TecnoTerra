@@ -1,22 +1,36 @@
-body
-{
+body {
     background-image: url("imagens/Wallpaper Quiz.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
+    padding-top: 100px;
 }
 
 .text-neon-blue {
     color: #38b6ff;
     text-shadow: 0 0 5px #0095ff, 0 0 10px #0d00ff, 0 0 20px #0400ff;
-  }
-  
-  .pe-menuopções
-  {
-    padding-right: 11.5%;
-  }
+}
 
-  .text-neon-white {
+.text-neon-white {
     color: white;
     text-shadow: 0 0 5px #8a8a8a, 0 0 10px #3f3f3f, 0 0 20px #000000;
-  }
+}
+
+.pe-menuopções {
+    padding-right: 11.5%;
+}
+
+.questao {
+    background-color: white;
+    padding: 15px;
+}
+footer{
+  position:relative;
+    bottom: 0;
+    width: 100%;
+    height: 10px; /* altura do footer */
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 50px; /* centraliza o texto verticalmente */
+}

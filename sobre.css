@@ -1,14 +1,23 @@
+.text-neon-blue {
+    color: #38b6ff;
+    text-shadow: 0 0 5px #0095ff, 0 0 10px #0d00ff, 0 0 20px #0400ff;
+}
+
+.text-neon-white {
+    color: white;
+    text-shadow: 0 0 5px #8a8a8a, 0 0 10px #3f3f3f, 0 0 20px #000000;
+}
+
+.pe-menuopções {
+    padding-right: 11.5%;
+}
+
 .main {
     background-image: url("imagens/Wallpaper Quiz.jpg");
     background-size: cover;      
     background-position: center;  
     min-height: 100vh;
     padding: 50px 0;              
-}
-
-.text-neon-blue {
-    color: #38b6ff;
-    text-shadow: 0 0 5px #0095ff, 0 0 10px #0d00ff, 0 0 20px #0400ff;
 }
 
 h2, h3 {
@@ -50,4 +59,69 @@ p {
     width: 100%; 
     height: auto; 
 }
+
+/*Botão contato*/
+.ctt {
+    margin: 60px auto;
+    padding: 45px 25px;
+    background: #0a0a0a;
+    border-radius: 14px;
+    text-align: center;
+    border: 1px solid rgba(0, 170, 255, 0.5);
+    box-shadow: 0 0 20px rgba(0, 170, 255, 0.15);
+    max-width: 950px;
+}
+
+.ctt-titulo {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #00bfff;
+    margin-bottom: 18px;
+}
+
+.ctt-texto {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #dcdcdc;
+    margin: 0 auto 28px auto;
+    max-width: 750px;
+}
+
+.ctt-botao {
+    display: inline-block;
+    background: #00bfff;
+    color: #000;
+    text-decoration: none;
+    padding: 14px 38px;
+    font-size: 1.15rem;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.30s ease-in-out;
+}
+
+.ctt-botao:hover {
+    background: #008ecc;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 0 14px rgba(0, 170, 255, 0.4);
+}
+
+@media (max-width: 600px) {
+    .ctt-titulo {
+        font-size: 1.6rem;
+    }
+    
+    .ctt-texto {
+        font-size: 0.95rem;
+    }
+
+    .ctt-botao {
+        width: 100%;
+        padding: 16px;
+        font-size: 1.1rem;
+    }
+}
+
+
+
 
