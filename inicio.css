@@ -301,7 +301,7 @@ html, body {
     }
 
     .navbar .nav-link {
-        color: black !important;
+        color: rgb(0, 191, 255) !important;
         text-shadow: none !important;
     }
 }
